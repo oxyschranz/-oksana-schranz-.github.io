@@ -5,3 +5,40 @@ body {
 h1 { 
     color: #9b59b6;
 }
+
+h2 {
+    color: orange;
+}
+
+li {
+    color: rgb(0, 0, 85);
+}
+
+p {
+    background-color: rgb(255, 255, 138);
+}
+
+input {
+    border-width: 3px;
+    border-color: red;
+}
+
+.hello {
+    background-color: white;
+}
+
+#special{
+    border-width: 2px;
+    border-color: rgb(11, 95, 173);
+    border-style: solid;
+}
+
+div > p {
+    font-size: 25px;
+}
+
+
+
+
+
+
