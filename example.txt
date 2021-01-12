@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-CuOF+2SnTUfTwSZjCXf01h7uYhfOBuxIhGKPbfEJ3+FqH/s6cIFN9bGr1HmAg4fQ" crossorigin="anonymous">
+	<title>Grid</title>
+</head>
+
+<body>
+	<div class="container">
+		<h1>Bootstrap Grid</h1>
+		<div class="row border">
+			<!-- Bootstrap Grid is built on 12 columns that and we can have a number of columns using these -->
+			<!-- Now let's change col to col-4 and the second one to col-8 to see how they behave -->
+			<div class="col bg-danger">
+				Column 1
+			</div>
+			<div class="col bg-info">
+				Column 2
+			</div>
+		</div>
+
+		<div class="row border">
+			<!-- The same as above, but they are set to a grid only from small screen sizes onwards, thus leaving the 
+                extra small dimensions to stack on top of each other. Furthemore, I've set a different breakpoint
+                when the viewport is XL. -->
+			<div class="col-sm-6 col-xl-4 bg-danger">
+				Column 1
+			</div>
+			<div class="col-sm-6 col-xl-8 bg-info">
+				Column 2
+			</div>
+			<!-- this technique can be applied to an image gallery for example, so images will show underneath each other on small devices, but show more on larger devices -->
+		</div>
+
+		<div class="row border">
+			<!-- By not specifing a number after the 'col' it will set all columns to equal width -->
+			<div class="col bg-danger">
+				Column 1
+			</div>
+			<div class="col bg-info">
+				Column 2
+			</div>
+			<div class="col bg-danger">
+				Column 3
+			</div>
+			<div class="col bg-info">
+				Column 4
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-popRpmFF9JQgExhfw5tZT4I9/CI5e2QcuUZPOVXb1m7qUmeR2b50u+YFEYe1wgzy"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
